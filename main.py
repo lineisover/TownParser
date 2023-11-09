@@ -14,7 +14,6 @@ def main():
             if prototype.get('Class') == 'Town':
                 town = Town(folder_name, prototype)
                 towns.setdefault(prototype.get('Name'), town)
-    print(towns.values())
     for town in towns.values():
         print_town(town)
 
